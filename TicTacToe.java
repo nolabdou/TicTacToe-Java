@@ -322,17 +322,23 @@ public class TicTacToe
     }
             
 
-        public static void printMenu()
-        {
-             System.out.println("  ************************************ "); 
-             System.out.println("  \n              Main Menu \n"); 
-             System.out.println("  ************************************ "); 
-             System.out.println("  Enter : "); 
-             System.out.println("  I to print intructions ");
-             System.out.println("  P to play Game");
-             System.out.println("  S to display Score Board");
-             System.out.println("  E to exit the application");
-        }
+        /**
+     * printMenu - Displays the main menu
+     *
+     * @param     none
+     * @return    void
+     */
+    public static void printMenu() {
+        System.out.println("  ************************************ ");
+        System.out.println("  \n              Main Menu \n");
+        System.out.println("  ************************************ ");
+        System.out.println("  Enter : ");
+        System.out.println("  I to print intructions ");
+        System.out.println("  L to load s previous game Setting ");
+        System.out.println("  P to play Game");
+        System.out.println("  S to display Score Board");
+        System.out.println("  E to exit the application");
+    }
         
         
         
