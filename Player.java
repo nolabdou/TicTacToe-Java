@@ -1,133 +1,118 @@
-
 /**
- * Write a description of class TicTacToePlayer here.
+ * Class Player helps create Player objects that will interract on the Tic-Tac-Toe Board using their respective pawns
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Abdias)
+ * @version (June 25, 2021)
  */
-public class Player
-{
+public class Player {
     // instance variables - replace the example below with your own
     private String name;
     private char pawn;
     private int score;
-   
 
-    
-     /**
-     * Constructor for objects of class TicTacToePlayer
-     */
-    public Player()
-    {
-        // initialise instance variables
-        name="";
-        pawn=' ';
-        score=0;
-        
-    }
-    
-    
     /**
-     * Constructor for objects of class TicTacToePlayer
+     * Constructor for objects of class Player with default values
      */
-    public Player(String name, char pawn,int score)
-    {
+    public Player() {
         // initialise instance variables
-        this.name=name;
-        this.pawn=pawn;
-        this.score=score;
-        
+        name = "";
+        pawn = ' ';
+        score = 0;
+
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Constructor for objects of class Player with provided values
+     */
+    public Player(String name, char pawn, int score) {
+        // initialise instance variables
+        this.name = name;
+        this.pawn = pawn;
+        this.score = score;
+
+    }
+
+    /**
+     * getName - returns the value of the name property
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param     non
+     * @return    String
      */
-    public String getName()
-    {
-        
+    public String getName() {
+
         return name;
-        
-    }
-    
-     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public char getPawn()
-    {
-        
-        return pawn;
-        
-    }
-    
-    
-     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int getScore()
-    {
-        
-        return score;
-        
+
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * getPawn - Returns the value of the pawn property
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param     none
+     * @return    char
      */
-    public void setName(String name)
-    {
-        
-        this.name=name;
-        
+    public char getPawn() {
+
+        return pawn;
+
     }
-    
-     /**
-     * An example of a method - replace this comment with your own
+
+    /**
+     * getScore - returns the value of the score porperty
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param     none
+     * @return    int
      */
-    public void setPawn(char pawn)
-    {
-        
-        this.pawn=pawn;
-        
+    public int getScore() {
+
+        return score;
+
     }
-    
-     /**
-     * An example of a method - replace this comment with your own
+        
+    /**
+     * setName - sets the provided value as new value for the name property
      *
-     * @param  none
+     * @param     String
      * @return    void
      */
-    public void setScore(int score)
-    {
-        
-        this.score=score;
-        
+        public void setName(String name) {
+
+        this.name = name;
+
     }
-    
-     /**
-     * An example of a method - replace this comment with your own
+
+    /**
+     * setPawn - sets the provided value as new value for the pawn property
      *
-     * @param  none
+     * @param     char
      * @return    void
      */
-    public void updateScore(int score2)
-    {
-        
-        this.score=this.score+score2;
-        
+    public void setPawn(char pawn) {
+
+        this.pawn = pawn;
+ 
+    }
+
+    /**
+     * setScore - sets the provided value as new value for the score property
+     *
+     * @param     int
+     * @return    void
+     */
+    public void setScore(int score) {
+
+        this.score = score;
+
+    }
+
+    /**
+     * updateScore - increments a Player object's current score by 1
+     *
+     * @param     String
+     * @return    void
+     */
+    public void updateScore() {
+
+        this.score = this.score + 1;
+
     }
 }
