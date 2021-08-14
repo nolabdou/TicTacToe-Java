@@ -293,7 +293,7 @@ public class TicTacToe
     public static void clearScreen() {
 
         for (int line = 0; line<100; line++) {
-            System.out.println("\u000c");
+            System.out.println("  ");
         }
 
     }
