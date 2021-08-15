@@ -34,6 +34,7 @@ comment7.target=void\ printGameInstruction()
 comment7.text=\r\n\ printGameInstruction\ -\ Displays\ instructions\ on\ the\ commands\ to\ play\ in\ any\ position\ on\ the\ board\r\n\r\n\ @param\ \ \ \ \ none\r\n\ @return\ \ \ \ void\r\n
 comment8.params=
 comment8.target=void\ printMenu()
+comment8.text=\r\n\ printMenu\ -\ Displays\ the\ main\ menu\r\n\r\n\ @param\ \ \ \ \ none\r\n\ @return\ \ \ \ void\r\n
 comment9.params=player\ gameBoard
 comment9.target=int\ wins(Player,\ char[])
 comment9.text=\r\n\ wins\ -\ Tests\ the\ pawn\ positions\ of\ a\ player\ to\ determine\ if\ he/she\ wins\ the\ current\ game\ or\ not\r\n\ it\ returns\ 1\ if\ the\ player\ wins,\ or\ else\ it\ returns\ 0\r\n\r\n\ @param\ \ \ \ \ Player,\ char[]\ (gameBoard)\r\n\ @return\ \ \ \ int\ \:\ \r\n
